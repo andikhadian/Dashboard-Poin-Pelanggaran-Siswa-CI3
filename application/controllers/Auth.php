@@ -72,14 +72,14 @@ class Auth extends CI_Controller
                     } else {
                         if ($user['role_id'] == 1) {
                             $this->session->set_flashdata('message', ' <div class="alert alert-success alert-dismissible fade show" role="alert">
-                            Selamat Datang<strong>' . $user['nama_user'] . '</strong> ! Saat ini Anda masuk sebagai  <strong>Admin</strong>. Tutup pesan ini jika sudah paham
+                            Selamat Datang<strong> ' . $user['nama_user'] . '</strong> ! Saat ini Anda masuk sebagai  <strong>Admin</strong>. Tutup pesan ini jika sudah paham
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                             </button></div>');
                             redirect('Admin/Dashboard');
                         } elseif ($user['role_id'] == 2) {
                             $this->session->set_flashdata('message', ' <div class="alert alert-success alert-dismissible fade show" role="alert">
-                            Selamat Datang<strong>' . $user['nama_user'] . '</strong> ! Saat ini Anda masuk sebagai <strong>Guru</strong>. Tutup pesan ini jika sudah paham
+                            Selamat Datang<strong> ' . $user['nama_user'] . '</strong> ! Saat ini Anda masuk sebagai <strong>Guru</strong>. Tutup pesan ini jika sudah paham
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                             </button></div>');

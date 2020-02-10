@@ -1,0 +1,7 @@
+.latest-report {
+	height: 200px;
+}
+
+.latest-report .latest-report-body {
+	overflow-y: scroll;
+}

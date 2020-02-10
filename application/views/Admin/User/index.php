@@ -127,7 +127,6 @@ date_default_timezone_set('Asia/Jakarta');
                                                     <i class="fas fa-cog"></i>
                                                 </button>
                                                 <div class="dropdown-menu">
-                                                    <a class="dropdown-item has-icon" href="<?= base_url('Admin/User/detail/') . $au['user_id']; ?>"><i class="fas fa-info-circle"></i> Detail</a>
                                                     <a class="dropdown-item has-icon" href="<?= base_url('Admin/User/ubah/') . $au['user_id']; ?>"><i class="fas fa-edit"></i> Ubah</a>
                                                     <a class="dropdown-item has-icon btnHapus" href="<?= base_url('Admin/User/hapus/') . $au['user_id']; ?>"><i class="fas fa-trash-alt"></i> Hapus</a>
                                                 </div>

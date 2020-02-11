@@ -248,6 +248,8 @@ class Pelanggar extends CI_Controller
 
         if ($poinSiswa < $poinPelanggaran) {
             $this->guru->countPointZero('siswa', $A_Siswa, 0);
+        } elseif ($poinSiswa - $poinPelanggaran == 0) {
+            $this->guru->countPointZero('siswa', $A_Siswa, 0);
         } else {
             $this->guru->countPoint('siswa', 'jenis_pelanggaran', $A_JenisPelanggaran, $A_Siswa);
         }
